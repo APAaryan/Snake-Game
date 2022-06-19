@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=PT+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+.main {
+  background: url("./image/bg.jpg");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+#board {
+  position:relative;
+  background: linear-gradient(rgb(90, 196, 90), rgba(53, 80, 121, 0.62));
+  width: 95vmin;
+  height: 95vmin;
+  border: 4px solid black;
+  display: grid;
+  left:50px;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+}
+.box {
+  align-self: flex-end;
+}
+#scorecontainer {
+  position: absolute;
+  top: 9px;
+  right: 197px;
+  font-family: "Inconsolata", monospace;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+}
+#hiscorebox {
+  position: absolute;
+  top: 40px;
+  right: 195px;
+  font-family: "Inconsolata", monospace;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+}
+.head {
+  background: linear-gradient(rgb(170, 4, 4), rgb(8, 8, 9));
+  border: 2px solid rgb(6, 5, 5);
+  transform: scale(1.06);
+  border-radius: 8px;
+}
+.food {
+  background: linear-gradient(yellow, orange);
+  border: 1px solid rgb(225, 98, 1);
+  border-radius: 6px;
+}
+.tail {
+  background-color: blue;
+  border: 1px solid black;
+  border-radius: 15px;
+}
